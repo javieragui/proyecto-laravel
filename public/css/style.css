@@ -77,6 +77,6 @@ form .avatar{
     width: 20px;
 }
 
-.pub_image .comments {
-    padding: 20px;
+.pub_image_detail .comments {
+    padding: 10px;
 }

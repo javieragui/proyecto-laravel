@@ -10,9 +10,9 @@ class Image extends Model {
 
     //Relación One to Many / de uno a muchos
     public function comments() {
-        return $this->hasMany('App\Comment');
+        return $this->hasMany('App\Comment')->orderBy('id', 'desc');
     }
-    
+
     //Relación One to Many
     public function likes() {
         return $this->hasMany('App\Like');
@@ -22,5 +22,5 @@ class Image extends Model {
     public function user() {
         return $this->belongsTo('App\User', 'user_id');
     }
-    
+
 }

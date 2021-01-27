@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//use App\Image;
 
 Route::get('/', function () {
     /*
@@ -41,3 +40,8 @@ Route::post('/comment/save', 'CommentController@store')->name('comment.save');
 Route::get('/comment/delete/{id}', 'CommentController@delete')->name('comment.delete');
 Route::get('/like/{image_id}', 'LikeController@like')->name('like.save');
 Route::get('/dislike/{image_id}', 'LikeController@dislike')->name('like.delete');
+Route::get('/likes', 'LikeController@index')->name('likes');
+Route::get('/perfil/{id}', 'UserController@profile')->name('profile');
+Route::get('/imagen/delete/{id}', 'ImageController@delete')->name('image.delete');
+Route::get('/imagen/editar/{id}', 'ImageController@edit')->name('image.edit');
+Route::post('/image/update', 'ImageController@update')->name('image.update');

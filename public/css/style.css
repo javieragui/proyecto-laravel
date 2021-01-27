@@ -73,7 +73,7 @@ form .avatar{
     padding-left: 20px;
     padding-right: 10px;
 }
-.likes img{
+.likes img {
     width: 20px;
 }
 
@@ -81,7 +81,30 @@ form .avatar{
     padding: 10px;
 }
 
-.number_likes{
+.number_likes {
     color: gray;
     font-size: 12px;
 }
+.profile-user {
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.profile-user .container-avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 900px;
+    overflow: hidden;
+    float:left;
+}
+
+.profile-user .container-avatar img {
+    height: 100%;
+}
+
+.profile-user .user-info {
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+

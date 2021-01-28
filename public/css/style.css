@@ -1,6 +1,7 @@
 form .avatar{
     margin-bottom: 15px;
     width: 55px;
+    float: left;
 }
 
 .navbar .container-avatar,
@@ -91,8 +92,8 @@ form .avatar{
 }
 
 .profile-user .container-avatar {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 900px;
     overflow: hidden;
     float:left;
@@ -107,4 +108,7 @@ form .avatar{
     padding-left: 30px;
     padding-top: 30px;
 }
-
+.btn-search {
+    margin-left: 0px;
+    padding-left: 0px;
+}
